@@ -1,0 +1,144 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto Slab', serif;
+}
+html,body{
+    width:100%;
+    height:100%;
+    background-color: #333333;
+}
+.bg--content{
+    width:100%;
+    height:100%;
+    background-color: #333333;
+}
+.layout--content{
+    margin-top:20px;
+}
+.bg--content__into{
+    background-color: #282828;
+}
+.bg--card,.bg--card__right{
+    background-color: transparent;
+}
+.caption{
+    color:#C0ABFF;
+    font-size: 28px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    border-bottom: 3px dashed #666666;
+}
+.extra-film{
+    font-size: 20px;
+    color:white;
+}
+.extra-film:hover{
+    color:#DAB453;
+}
+.title-film-1{
+    font-size:16px;
+    color:#41B6ED;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.title-film-1:hover{
+    transition: 0.6s;
+    color:#DABD2C;
+}
+.title-film-2{
+    font-size:15px;
+    color:#fff;
+    font-weight: 400;
+}
+.time{
+    font-size:14px;
+    color:#5A7777;
+}
+.message-bookmark{
+    color: white;
+}
+.right-film{
+    background-color: transparent;
+}
+.right-film img{
+    height:70%;
+}
+.bg--card__right{
+    border:none !important;
+}
+.filmitem-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block-anh{
+    width:30%;
+    height:100px;
+}
+.block-anh img{
+    height: 100%;
+}
+.block-title{
+    width:70%;
+    height:100px;
+}
+.main-title-right{
+    color : #C2AA8D;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.6s;
+}
+.sub-title-right{
+    color : #fff;
+    font-size: 13px;
+}
+.view-right{
+    color : grey;
+    font-size: 12px;
+}
+.main-title-right:hover{
+    color:yellow;
+    transition: 0.6s;
+}
+.return-top{
+	position: fixed;
+	bottom: 20px;
+	right:20px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.6s;
+	z-index: 1000;
+}
+.active-return{
+	visibility: visible;
+	opacity: 1;
+	transition: 0.6s;
+}
+.return-top i{
+	cursor: pointer;
+	font-size: 50px;
+	color:#fc3737;
+	animation-name: return-top;
+	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+@-webkit-keyframes return-top{
+	0%{
+		transform: translateY(0px);
+	}
+	50%{
+		transform: translateY(-5px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+/* responsive */
+@media (max-width: 767px){
+    .only-pc,.return-top{
+        display: none;
+    }
+}
